@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>A Basic HTML5 Template</title>
+    <link rel="stylesheet" href="styles.css?v=1.0">
+  </head>
+  <body style="background-color: #8DE8D6">
+    <div class="container">
+      <div class="container-center">
+        <h1 class="user-form-title">Formulario de Registro</h1>
+        <form>
+          <div class="user-input-item">
+            <label class="user-input-item-label">Correo</label>
+            <input class="user-input" type="email" id="username" />
+          </div>
+          <div class="user-input-item">
+            <label class="user-input-item-label">Nombre completo</label>
+            <input class="user-input" type="text" id="name" />
+          </div>
+          <div class="user-input-item">
+            <label class="user-input-item-label">Fecha nacimiento</label>
+            <input class="user-input" type="date" id="birthdate" />
+          </div>
+          <div class="user-input-item">
+            <label class="user-input-item-label">Pais</label>
+            <select id="countrySelect" class="user-input">
+              <option value="Estados Unidos">Estados Unidos</option>
+              <option value="Costa Rica">Costa Rica</option>
+              <option value="Japon">Japon</option>
+              <option value="Suiza">Suiza</option>
+            </select>
+          </div>
+          <div class="user-input-item">
+            <label class="user-input-item-label">Sexo</label>
+            <div class="user-button-group">
+              <label class="select-item-row"><input type="radio" name="sex" value="Hombre"/>Hombre</label>
+              <label class="select-item-row"><input type="radio" name="sex" value="Mujer"/>Mujer</label>
+              <label class="select-item-row"><input type="radio" name="sex" value="Otro"/>Otro</label>
+            </div>
+          </div>
+          <div class="user-input-item">
+            <label class="user-input-item-label">Hobbies</label>
+            <div class="user-button-group">
+              <label class="select-item-row"><input type="checkbox" name="hobbies" value="Futbol"/>Futbol</label>
+              <label class="select-item-row"><input type="checkbox" name="hobbies" value="Video Juegos"/>Video Juegos</label>
+              <label class="select-item-row"><input type="checkbox" name="hobbies" value="Anime"/>Anime</label>
+              <label class="select-item-row"><input type="checkbox" name="hobbies" value="Viajar"/>Viajar</label>
+              <label class="select-item-row"><input type="checkbox" name="hobbies" value="Otro"/>Otro</label>
+            </div>
+          </div>
+
+          <button onclick="submitForm()" class="primary-button" type="button">registrarse</button>
+          <button class="secondary-button" type="button">cancelar</button>
+        </form>
+      </div>
+      <div class="container-center" style="width: 40%;">
+        <div id="table">
+          <div class="table-head">
+            <div class="table-item">
+              <label class="user-input-item-label" style='order:1'>Email</label>
+            </div>
+            <div class="table-item">
+              <label class="user-input-item-label" style='order:2'>Nombre</label>
+            </div>
+            <div class="table-item">
+              <label class="user-input-item-label">Fec. Nacimiento</label>
+            </div>
+            <div class="table-item">
+              <label class="user-input-item-label">Pais</label>
+            </div>
+            <div class="table-item">
+              <label class="user-input-item-label">Sexo</label>
+            </div>
+            <div class="table-item">
+              <label class="user-input-item-label">Hobbies</label>
+            </div>
+          </div> <!-- End of head -->
+          <div id="tbody" class="table-body">
+            <!-- Add content here -->
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--div>
+      
+      <h1 id="title">Hello World!</h1>
+      <ul name="prueba" id="list"></ul>
+    </div-->
+    <script src="scripts.js"></script>
+  </body>
+</html>
